@@ -1,0 +1,9 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(/Assets/images/pic3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-color: rgb(185, 248, 227);
+}
