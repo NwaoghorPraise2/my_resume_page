@@ -1,9 +1,304 @@
-body {
-	margin: 0;
-	padding: 0;
-	background-image: url(/Assets/images/pic3.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-blend-mode: multiply;
-	background-color: rgb(185, 248, 227);
+:root {
+    background-color: rgba(97, 165, 148, 0.938);
+    background-image: url(/Assets/images/pic6.png);
+    /* font-size: 62.5%; */
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+    /* animation: slider 150s infinite  linear; */
+    /* background-size:contain; */
+}
+
+@keyframes slider {
+    25% {
+        background-image: url(/Assets/images/pic1.jpg);
+    }
+    50% {
+        background-image: url(/Assets/images/pic2.png);
+    }
+    75% {
+        background-image: url(/Assets/images/pic6.png);
+    }
+    100% {
+        background-image: url(/Assets/images/pic6.png);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    /* color: rgba(12, 70, 136, 0.938); */
+}
+
+
+
+.carry {
+    width: 150vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 80rem; */
+    margin: 0 auto;
+    /* padding: 2rem; */
+    /* padding: 0; */
+    /* margin: 9% 70px auto; */
+    /* background-color: white !important; */
+    /* display: block; */
+    /* height: 700px; */
+    /* box-shadow: rgb(0, 0, 0); */
+    /* display: flex; */
+    /* grid-column-gap:100px; */
+    /* grid-row-gap:100px; */
+    justify-content: center;
+    /* grid-template-columns:40% 40% 30%; */
+}
+
+.carry>* {
+    width: 100%;
+}
+
+.part1>div {
+    background-color: rgb(15, 177, 192);
+    margin: 12px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    /* width:100px; */
+}
+
+.part1>div:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 120ms;
+    background-color: rgb(96, 121, 117);
+}
+
+.part1 {
+    width: 40%;
+    /* background: brown !important; */
+    /* height: 500px !important; */
+    /* width: 100%; */
+    /* margin: 10px; */
+    /* padding: 20px; */
+    /* border-radius: 25px; */
+    /* border: 2px solid #73AD21; */
+}
+
+
+/* width: 100%; */
+
+
+/* background-color: rgb(1, 5, 2) !important;  */
+
+
+/* height: 500px !important;
+	margin: 10px; */
+
+
+/* padding: 20px */
+
+.part2 {
+    background-color: rgb(196, 241, 234);
+    /* height: 500px !important; */
+    position: relative;
+    box-shadow: 6px 6px 6px 6px gray;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    /* text-align:center; */
+}
+
+.part2:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(89, 112, 114, 0.452);
+    transform: translateY(-0.9rem);
+    transition: transform 180ms;
+    opacity: 0.9;
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.part2 h2 {
+    text-align: center;
+}
+
+.phase1 {
+    margin: 25px;
+	font-size: 22px;
+	padding: 12px;
+	font-style: initial;
+	/* text-emphasis: none;*/
+	text-align: center;
+	color: #000000;
+	font-weight: bold;
+}
+
+.phase2 {
+    margin: 20px;
+    background-color: rgb(15, 177, 192);
+    padding: 4px;
+    border-radius: 20px;
+    text-align:center;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.link {
+justify-content: center;
+/* margin: 20px auto; */
+margin-left: 120px;
+}
+
+.link a {
+    color: rgb(236, 246, 246);
+    margin: 10px;
+    size: 32px;
+    background-color: rgb(22, 27, 27);
+    /* margin:10px; */
+    padding: 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+.link a:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 120ms;
+    background-color: rgb(104, 92, 92);
+}
+
+
+/* @media screen and (max-width: 480px) {
+			.carry {
+			  background-color: lightgreen;
+			  grid-template-rows:30% 40% 30%;
+			}
+		  } */
+
+.main {
+    background-color: antiquewhite;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    /* margin: 0 auto; */
+}
+
+.part2 img {
+    /* align-content: center;  */
+    /* align-items: center; */
+    /* text-align: center; */
+    border-style: solid;
+    /* border:80px; */
+    border-color: rgb(245, 248, 250);
+    border-radius: 100%;
+    margin-top: 80px;
+    margin-left: 160px;
+    width: 280px;
+    height: 280px;
+    line-height: 280px;
+    /* text-align: center; */
+    /* align-content: center;  */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 80px; */
+    /* margin: 0 auto;   */
+}
+
+.part2 hr {
+    color: rgb(119, 214, 231);
+    margin: 30px;
+    font-size: small;
+    /* padding:12px; */
+}
+
+.section {
+    background-color: rgb(44, 28, 9);
+}
+
+.part3 {
+    background-color: rgb(204, 245, 241);
+    height: 750px;
+    margin: 10px;
+    border-radius: 20px;
+    overflow-y: scroll;
+    padding: 70px;
+}
+
+.Re1 {
+    /* background-color: lightgrey; */
+    width: 517px;
+    border: 5px double;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+#progressBar {
+    width: 100%;
+    height: 25px;
+    border: 0.2rem solid #022a4de1;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+}
+
+#Result-bar {
+    height: 20px;
+    background-color: #56a5eb;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+#loader {
+    border: 1.6rem solid rgb(248, 245, 245);
+    border-top: 1.6rem solid #396e9c;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
 }
